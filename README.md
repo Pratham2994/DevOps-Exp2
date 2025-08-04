@@ -27,7 +27,7 @@ Edit files, stage changes, commit with messages, switch branches, merge, and vie
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/git-simulator.git
+git clone https://github.com/Pratham2994/git-simulator.git
 cd git-simulator
 ```
 
