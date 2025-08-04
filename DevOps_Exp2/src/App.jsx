@@ -8,6 +8,7 @@ const initialFiles = [
   { name: 'README.md', status: 'unmodified', content: '# Git Simulator' },
 ];
 
+
 function App() {
   const [files, setFiles] = useState(() => {
     const saved = localStorage.getItem('git-sim-files');
@@ -32,14 +33,17 @@ function App() {
           },
         ];
   });
+  
   const [branches, setBranches] = useState(() => {
     const saved = localStorage.getItem('git-sim-branches');
     return saved ? JSON.parse(saved) : { main: 'c1' };
   });
+
   const [HEAD, setHEAD] = useState(() => {
     const saved = localStorage.getItem('git-sim-HEAD');
     return saved ? JSON.parse(saved) : { branch: 'main', commit: 'c1' };
   });
+
   const [error, setError] = useState(null);
 
   useEffect(() => {

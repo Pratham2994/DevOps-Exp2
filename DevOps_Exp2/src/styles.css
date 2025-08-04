@@ -4,9 +4,11 @@ body {
   background: #0f111a;
   color: #f0f5ff;
 }
+
 .app h1 {
   margin-bottom: 0.5rem;
 }
+
 .layout {
   display: flex;
   gap: 1rem;
