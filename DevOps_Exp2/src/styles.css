@@ -1,0 +1,134 @@
+body {
+  font-family: system-ui, sans-serif;
+  padding: 1rem;
+  background: #0f111a;
+  color: #f0f5ff;
+}
+.app h1 {
+  margin-bottom: 0.5rem;
+}
+.layout {
+  display: flex;
+  gap: 1rem;
+}
+.left-pane {
+  flex: 2;
+  border: 1px solid #444;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #1f2232;
+}
+.right-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.command-box input {
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  margin-right: 0.5rem;
+  background: #222639;
+  color: #fff;
+}
+.command-box button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #5c6fff;
+  color: white;
+}
+.history {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+.hist-item {
+  background: #202745;
+  padding: 4px 8px;
+  display: inline-block;
+  margin: 2px;
+  border-radius: 4px;
+}
+.viz .section {
+  margin-bottom: 1rem;
+}
+.row {
+  display: flex;
+  gap: 1rem;
+}
+.file-list {
+  list-style: none;
+  padding: 0;
+  background: #1b1f38;
+  border-radius: 6px;
+  min-width: 140px;
+}
+.file-list li {
+  padding: 6px 10px;
+  border-bottom: 1px solid #2e3160;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.file-list .status {
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  border-radius: 12px;
+  background: #555;
+  text-transform: uppercase;
+}
+.status.untracked { background: #d94f70; }
+.status.modified { background: #ffb400; }
+.status.staged { background: #4ee8a1; }
+.status.unmodified { background: #666; }
+.empty { color: #888; }
+.commit-graph {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.commit-card {
+  background: #202745;
+  padding: 8px 12px;
+  border-radius: 8px;
+  position: relative;
+  transition: transform .2s;
+}
+.commit-card.current {
+  border: 2px solid #5c6fff;
+  box-shadow: 0 0 12px rgba(92, 111, 255, .7);
+}
+.branch-tag {
+  background: #766cff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 4px;
+  font-size: 0.7rem;
+}
+.hint {
+  background: #1b1f38;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+.error-banner {
+  background: #ff4f4f;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+.error-banner button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
