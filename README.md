@@ -82,7 +82,6 @@ This project is ideal for:
 ## 🛠 Tech Stack
 
 - React + Vite
-- Tailwind CSS (optional)
 - LocalStorage for persistence
 - Vanilla JS for logic (no backend required)
 
